@@ -1385,18 +1385,6 @@ _TD.a.push(function(t) {
                 i.closePath(),
                 this._life_recover_wait--
             }
-            i.textAlign = "right",
-            i.fillStyle = "#666",
-            i.font = "normal " + 12 * _TD.retina + "px 'Courier New'",
-            i.beginPath(),
-            i.fillText("版本: " + t.version + " | waitaikong.s.cn.vc | 外太空", t.stage.width - t.padding, t.stage.height - 2 * t.padding),
-            i.closePath(),
-            i.textAlign = "left",
-            i.fillStyle = "#666",
-            i.font = "normal " + 12 * _TD.retina + "px 'Courier New'",
-            i.beginPath(),
-	    i.fillText("延迟:"+t.fps,t.padding,t.stage.height-2*t.padding),
-            i.closePath()
         }
     };
     t.Panel = function(e, s) {
