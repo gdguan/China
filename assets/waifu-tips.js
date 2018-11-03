@@ -66,8 +66,8 @@ $('.waifu-tool .fui-photo').click(function (){
 
 (function (){
     var text;
-    //var SiteIndexUrl = 'https://www.fghrsh.net/';  // 手动指定主页
-    var SiteIndexUrl = window.location.protocol+'//'+window.location.hostname+'/';  // 自动获取主页
+    var SiteIndexUrl = 'http://wtkgame.tk//';  // 手动指定主页
+    //var SiteIndexUrl = window.location.protocol+'//'+window.location.hostname+'/';  // 自动获取主页
     
     if (window.location.href == SiteIndexUrl) {      // 如果是主页
         var now = (new Date()).getHours();
@@ -107,7 +107,7 @@ $('.waifu-tool .fui-photo').click(function (){
                 text = 'Hello! 来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友';
             }
         } else {
-            text = '欢迎来玩<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
+            text = '欢迎来玩<span style="color:#0099cc;">『WTK塔防游戏』</span>';
         }
     }
     showMessage(text, 6000);
@@ -132,7 +132,6 @@ function elseActed() {
 }
 
 function showHitokoto(){
-	/* 增加 hitokoto.cn API */
     $.getJSON('https://v1.hitokoto.cn',function(result){
         var text = '这句一言来自 <span style="color:#0099cc;">『{source}』</span>，是 <span style="color:#0099cc;">{creator}</span> 在 hitokoto.cn 投稿的。';
         text = text.render({source: result.from, creator: result.creator});
