@@ -27,7 +27,7 @@ re.toString = function() {
 };
 
 $(document).on('copy', function (){
-    showMessage('你都复制了些什么呀，转载要记得加上出处哦', 5000, true);
+    showMessage('你都复制了些什么呀？', 5000, true);
 });
 
 $('.waifu-tool .fui-home').click(function (){
@@ -107,14 +107,11 @@ $('.waifu-tool .fui-photo').click(function (){
                 text = 'Hello! 来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友';
             }
         } else {
-            text = '欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
+            text = '欢迎来玩<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
         }
     }
     showMessage(text, 6000);
 })();
-
-//window.hitokotoTimer = window.setInterval(showHitokoto,30000);
-/* 检测用户活动状态，并在空闲时 定时显示一言 */
 var getActed = false;
 window.hitokotoTimer = 0;
 var hitokotoInterval = false;
@@ -245,7 +242,7 @@ function loadRandModel(){
         dataType: "json",
         success: function (result){
             if (result.textures['id'] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) {
-                showMessage('我还没有其他衣服呢', 3000, true);
+                showMessage('我没有其他衣服呢', 3000, true);
             } else {
                 showMessage('我的新衣服好看嘛', 3000, true);
             }
