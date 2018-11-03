@@ -12,6 +12,8 @@
 
 谢谢，如果喜欢请Star
 
+由GDGuan改造
+
 ___
 # Tower Defense Game
 
@@ -26,3 +28,5 @@ After many revisions
 So there will be no major changes in a short period of time.
 
 Thank you, if you like, please Star
+
+Renovated by GDGuan
