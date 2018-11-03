@@ -96,16 +96,14 @@ $('.waifu-tool .fui-photo').click(function (){
             referrer.href = document.referrer;
             var domain = referrer.hostname.split('.')[1];
             if (window.location.hostname == referrer.hostname) {
-                text = '欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
+                text = '欢迎来玩<span style="color:#0099cc;">『WTK塔防游戏』</span>';
             } else if (domain == 'baidu') {
-                text = 'Hello! 来自 百度搜索 的朋友<br>你是搜索 <span style="color:#0099cc;">' + referrer.search.split('&wd=')[1].split('&')[0] + '</span> 找到的我吗？';
+                text = '欢迎来玩<span style="color:#0099cc;">『WTK塔防游戏』</span>';
             } else if (domain == 'so') {
-                text = 'Hello! 来自 360搜索 的朋友<br>你是搜索 <span style="color:#0099cc;">' + referrer.search.split('&q=')[1].split('&')[0] + '</span> 找到的我吗？';
+                text = '欢迎来玩<span style="color:#0099cc;">『WTK塔防游戏』</span>';
             } else if (domain == 'google') {
                 text = 'Hello! 来自 谷歌搜索 的朋友<br>欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
-            } else {
-                text = 'Hello! 来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友';
-            }
+            } 
         } else {
             text = '欢迎来玩<span style="color:#0099cc;">『WTK塔防游戏』</span>';
         }
